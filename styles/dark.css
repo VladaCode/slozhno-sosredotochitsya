@@ -9,4 +9,18 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --background-image: url(../images/cover-image-dark.png);
+  --background-color: #000028;
+  --tittle-color: #DB00FF;
+  --title-shadow: #ff0070;
+  --text-color: #F1B2CE;
+  --section-article-title: var(--background-color);
+  --color-rec: var(--title-shadow);
+  --color-button: var(--title-shadow);
+  --hover-color: 1px solid rgba(255, 0, 112, 0.4);
+  --right-angle: var(--title-shadow);
+  --background-header-text: var(--title-shadow);
+  --section-title: var(--title-shadow);
+  --link-shadow: var(--title-shadow);
+  --title-decor: var(--title-shadow);
 }
