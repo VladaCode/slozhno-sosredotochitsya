@@ -18,6 +18,7 @@
     padding: 0 10px;
   }
 }
+
 .header__theme-menu-list{
   display: flex;
   justify-content: center;
@@ -68,6 +69,7 @@
     padding-top: 75px;
   }
 }
+
 /* REC  */
 .header-rec-icon{
   text-transform: uppercase;
@@ -100,6 +102,7 @@
   right: 20px;
   top: 20px;
 }
+
 .decorated-zone::before{
   content: "";
   position: absolute;
@@ -109,8 +112,8 @@
   border-bottom: 1px solid var(--right-angle);
   left: 20px;
   bottom: 20px;
-
 }
+
 /* Контейнер h1  */
 .header__container{
   display: flex;
@@ -118,6 +121,7 @@
   flex-direction: column;
   gap: 76px;
 }
+
 @media (width < 1024px) and (width >= 768px) {
   .header__container{
     padding: 173px 0 183px;
