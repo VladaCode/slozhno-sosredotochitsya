@@ -23,4 +23,5 @@
   --section-title: var(--title-shadow);
   --link-shadow: var(--title-shadow);
   --title-decor: var(--title-shadow);
+  --header-text: var(--background-color);
 }

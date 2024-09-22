@@ -23,6 +23,7 @@
   --background-header-text: #FF8DCB;
   --section-title: var(--text-color);
   --link-shadow: var(--tittle-color);
+  --header-text: var(--text-color);
 }
 
 .page.theme_light .header-rec-icon {
