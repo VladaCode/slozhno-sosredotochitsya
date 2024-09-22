@@ -2,7 +2,6 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background: var(--background-image) no-repeat top center, var(--background-color);
-  background-size: cover;
   background-size: auto 768px;
   background-attachment: fixed;
 }
@@ -16,6 +15,7 @@
     padding: 0 10px;
   }
 }
+
 .header__theme-menu-list{
   display: flex;
   justify-content: center;
@@ -56,7 +56,7 @@
   padding: 2.5px 13px;
   justify-content: center;
   align-items: center;
-  text-transform: lowercase;;
+  text-transform: lowercase;
   cursor: pointer;
 }
 .header__theme-menu-button:hover {
@@ -72,6 +72,7 @@
   border: 1px solid var(--color-button);
 }
 /* REC  */
+
 .header-rec-icon{
   text-transform: uppercase;
   position: absolute;
@@ -86,12 +87,15 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  box-shadow: 0 0 4px 2px var(--color-rec); 
-  background-color: var(--color-rec); 
+  box-shadow: 0 0 4px 2px 
+  var(--color-rec); 
+  background-color: 
+  var(--color-rec); 
   top: 50%; 
   right: -20px;
   transform: translateY(-50%); 
 }
+
 /* Углы */
 .decorated-zone::after {
   content: "";
@@ -109,6 +113,7 @@
       top: 10px;
   }
 }
+
 .decorated-zone::before{
   content: "";
   position: absolute;
@@ -125,6 +130,7 @@
       bottom: 17px;
   }
 }
+
 /* Контейнер h1  */
 .header__container{
   display: flex;
@@ -133,17 +139,20 @@
   gap: 76px;
 }
 @media (width < 1024px) and (width >= 768px) {
+
   .header__container{
     padding: 150px 0 183px;
     gap: 133px;
   }
 }
 @media (width < 768px) and (width >= 375px) {
+
   .header__container{
     padding: 70px 0 74px;
     gap: 57px;
   }
 }
+
 .header__title{
   margin-inline-start: -2%;
   font-weight: 700;
@@ -163,6 +172,7 @@
     line-height: 82.5%;
   }
 }
+
 .header__text{
   align-self: flex-end;
   font-weight: 700;
@@ -174,6 +184,7 @@
     inline-size: 100%;
   }
 }
+
 .color__block{
   background-color: var(--background-header-text);
 }
@@ -223,6 +234,7 @@
 .text_indentation {
   line-height: 130%;
 }
+
 .text_indentation:not(:last-child){
   padding-block-end: 20px;
 }
@@ -259,6 +271,7 @@
 .section:nth-of-type(2) {
   grid-template-columns: 1fr 1fr;
 }
+
 .section_articles{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -271,6 +284,7 @@
     display: flex;
     flex-direction: column;
   }
+
   .section_articles .text_indentation{
     padding-block-end: 0px;
   }
@@ -280,10 +294,12 @@
     display: flex;
     flex-direction: column;
   }
+
   .section_articles .text_indentation{
     padding-block-end: 0px;
   }
 }
+
  .section:nth-of-type(2) .section_title{
   grid-row: 1 / 2;
   inline-size: 65%;
@@ -298,6 +314,7 @@
     inline-size: 100%;
   }
 }
+
 .section:nth-of-type(1) .section_title{
   inline-size: 90%;
 }
@@ -305,6 +322,7 @@
     margin-block-end:  20px;
 }
   /* Галерея */
+
 .section_gallery{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -317,6 +335,7 @@
     gap: 10px;
   }
 }
+
 .section_gallery .section_article-title{
   grid-column: 1 / -1;
 }
