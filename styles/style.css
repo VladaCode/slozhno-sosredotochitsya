@@ -1,6 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page {
-  background: var(--background-image),
+  background: var(--background-image)
     var(--background-color);
     background-attachment: fixed;
     background-size: cover;
