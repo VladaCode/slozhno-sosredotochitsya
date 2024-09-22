@@ -2,10 +2,10 @@
 .page {
   background: var(--background-image),
     var(--background-color);
-  background-attachment: fixed;
-  background-size: auto 768px;
-  background-repeat: no-repeat;
-  background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 /* HEADER  */
 .header {
