@@ -1,10 +1,9 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background: var(--background-image) no-repeat top center fixed,
+  background: var(--background-image) no-repeat top center,
     var(--background-color);
+  background-attachment: fixed;
   background-size: auto 768px;
-  
 }
 /* HEADER  */
 .header {
