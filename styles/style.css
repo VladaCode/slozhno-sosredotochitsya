@@ -1,7 +1,8 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background: var(--background-image) no-repeat top center, var(--background-color);
+  background: var(--background-image) no-repeat top center,
+    var(--background-color);
   background-size: auto 768px;
   background-attachment: fixed;
 }
@@ -15,8 +16,7 @@
     padding: 0 10px;
   }
 }
-
-.header__theme-menu-list{
+.header__theme-menu-list {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -29,7 +29,7 @@
 }
 @media (width < 768px) and (width >= 375px) {
   .header__theme-menu-list {
-      gap: 11px;
+    gap: 11px;
   }
 }
 /* Кнопки */
@@ -72,8 +72,7 @@
   border: 1px solid var(--color-button);
 }
 /* REC  */
-
-.header-rec-icon{
+.header-rec-icon {
   text-transform: uppercase;
   position: absolute;
   color: var(--color-rec);
@@ -87,13 +86,11 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  box-shadow: 0 0 4px 2px 
-  var(--color-rec); 
-  background-color: 
-  var(--color-rec); 
-  top: 50%; 
+  box-shadow: 0 0 4px 2px var(--color-rec);
+  background-color: var(--color-rec);
+  top: 50%;
   right: -20px;
-  transform: translateY(-50%); 
+  transform: translateY(-50%);
 }
 
 /* Углы */
@@ -109,12 +106,11 @@
 }
 @media (width < 768px) and (width >= 375px) {
   .decorated-zone::after {
-      right: 10px;
-      top: 10px;
+    right: 10px;
+    top: 10px;
   }
 }
-
-.decorated-zone::before{
+.decorated-zone::before {
   content: "";
   position: absolute;
   width: 25px;
@@ -126,34 +122,30 @@
 }
 @media (width < 768px) and (width >= 375px) {
   .decorated-zone::before {
-      left: 10px;
-      bottom: 17px;
+    left: 10px;
+    bottom: 17px;
   }
 }
-
 /* Контейнер h1  */
-.header__container{
+.header__container {
   display: flex;
-  padding: 238px 0 136px ;
+  padding: 238px 0 136px;
   flex-direction: column;
   gap: 76px;
 }
 @media (width < 1024px) and (width >= 768px) {
-
-  .header__container{
+  .header__container {
     padding: 150px 0 183px;
     gap: 133px;
   }
 }
 @media (width < 768px) and (width >= 375px) {
-
-  .header__container{
+  .header__container {
     padding: 70px 0 74px;
     gap: 57px;
   }
 }
-
-.header__title{
+.header__title {
   margin-inline-start: -2%;
   font-weight: 700;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -172,8 +164,7 @@
     line-height: 82.5%;
   }
 }
-
-.header__text{
+.header__text {
   align-self: flex-end;
   font-weight: 700;
   inline-size: 50%;
@@ -184,8 +175,7 @@
     inline-size: 100%;
   }
 }
-
-.color__block{
+.color__block {
   background-color: var(--background-header-text);
 }
 /* MAIN  */
@@ -235,7 +225,7 @@
   line-height: 130%;
 }
 
-.text_indentation:not(:last-child){
+.text_indentation:not(:last-child) {
   padding-block-end: 20px;
 }
 .section_title {
@@ -272,7 +262,7 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.section_articles{
+.section_articles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row: 2 / 3;
@@ -285,7 +275,7 @@
     flex-direction: column;
   }
 
-  .section_articles .text_indentation{
+  .section_articles .text_indentation {
     padding-block-end: 0px;
   }
 }
@@ -295,12 +285,11 @@
     flex-direction: column;
   }
 
-  .section_articles .text_indentation{
+  .section_articles .text_indentation {
     padding-block-end: 0px;
   }
 }
-
- .section:nth-of-type(2) .section_title{
+.section:nth-of-type(2) .section_title {
   grid-row: 1 / 2;
   inline-size: 65%;
 }
@@ -314,16 +303,14 @@
     inline-size: 100%;
   }
 }
-
-.section:nth-of-type(1) .section_title{
+.section:nth-of-type(1) .section_title {
   inline-size: 90%;
 }
 .last_section .section_recommend-title {
-    margin-block-end:  20px;
+  margin-block-end: 20px;
 }
-  /* Галерея */
-
-.section_gallery{
+/* Галерея */
+.section_gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px 19px;
@@ -335,8 +322,7 @@
     gap: 10px;
   }
 }
-
-.section_gallery .section_article-title{
+.section_gallery .section_article-title {
   grid-column: 1 / -1;
 }
 .section__image {
@@ -344,10 +330,12 @@
   inline-size: 100%;
   block-size: 100%;
 }
-.section__image:first-of-type, .section__image:last-of-type {
+.section__image:first-of-type,
+.section__image:last-of-type {
   grid-column: span 2;
 }
-.section__image:nth-of-type(2), .section__image:nth-of-type(3) {
+.section__image:nth-of-type(2),
+.section__image:nth-of-type(3) {
   grid-row: span 2;
 }
 /* FOOTER  */
@@ -358,13 +346,13 @@
 }
 @media (width < 1024px) and (width >= 768px) {
   .footer {
-      padding: 434px 20px;
+    padding: 434px 20px;
   }
 }
 @media (width < 768px) and (width >= 375px) {
   .footer {
-      margin-top: 40px;
-      padding: 262px 10px;
+    margin-top: 40px;
+    padding: 262px 10px;
   }
 }
 .footer__title {
@@ -375,11 +363,11 @@
 }
 @media (width < 1024px) and (width >= 375px) {
   .footer__title {
-      text-shadow: 2px 2px 0px var(--title-decor);
+    text-shadow: 2px 2px 0px var(--title-decor);
   }
 }
 @media (width < 768px) and (width >= 375px) {
   .footer__title {
-      font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }
