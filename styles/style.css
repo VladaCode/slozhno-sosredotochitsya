@@ -1,9 +1,11 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page {
-  background: var(--background-image) no-repeat top center,
+  background: var(--background-image),
     var(--background-color);
   background-attachment: fixed;
   background-size: auto 768px;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 /* HEADER  */
 .header {
