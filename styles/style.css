@@ -27,6 +27,11 @@
     align-items: flex-end;
   }
 }
+@media (width < 768px) and (width >= 375px) {
+  .header__theme-menu-list {
+      gap: 11px;
+  }
+}
 /* Кнопки */
 .header__theme-menu {
   padding-block-start: 20px;
@@ -98,6 +103,12 @@
   right: 20px;
   top: 20px;
 }
+@media (width < 768px) and (width >= 375px) {
+  .decorated-zone::after {
+      right: 10px;
+      top: 10px;
+  }
+}
 .decorated-zone::before{
   content: "";
   position: absolute;
@@ -107,6 +118,12 @@
   border-bottom: 1px solid var(--right-angle);
   left: 20px;
   bottom: 20px;
+}
+@media (width < 768px) and (width >= 375px) {
+  .decorated-zone::before {
+      left: 10px;
+      bottom: 17px;
+  }
 }
 /* Контейнер h1  */
 .header__container{
@@ -150,7 +167,6 @@
   align-self: flex-end;
   font-weight: 700;
   inline-size: 50%;
-  line-height: 23px;
   color: var(--header-text);
 }
 @media (width < 425px) {
@@ -180,6 +196,11 @@
 .section {
   display: grid;
   grid-template-columns: 1fr 66%;
+}
+@media (width < 1024px) and (width >= 768px) {
+  .section {
+    grid-template-columns: 1fr 65%;
+  }
 }
 @media (width < 768px) and (width >= 375px) {
   .section {
@@ -287,12 +308,13 @@
 .section_gallery{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 20px 19px;
 }
 @media (width < 768px) and (width >= 375px) {
   .section_gallery {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 }
 .section_gallery .section_article-title{
@@ -314,6 +336,17 @@
   padding: 282px 20px;
   position: relative;
   text-align: center;
+}
+@media (width < 1024px) and (width >= 768px) {
+  .footer {
+      padding: 434px 20px;
+  }
+}
+@media (width < 768px) and (width >= 375px) {
+  .footer {
+      margin-top: 40px;
+      padding: 262px 10px;
+  }
 }
 .footer__title {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
