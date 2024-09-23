@@ -22,10 +22,30 @@
   --right-angle: var( --text-color);
   --background-header-text: #FF8DCB;
   --section-title: var(--text-color);
-  --link-shadow: var(--tittle-color);
+  --link-shadow: var(--title-decor);
   --header-text: var(--text-color);
 }
 
 .page.theme_light .header-rec-icon {
   display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-image: url(../images/cover-image-light.png);
+    --background-color: #fff1f7;
+    --tittle-color: #FFC2E6;
+    --title-shadow: #ff0070;
+    --text-color: #353430;
+    --title-decor: #ff8dcb;
+    --section-article-title: var(--text-color);
+    --color-rec: var(--background-color);
+    --color-button: var(--text-color);
+    --hover-color: 1px solid rgba(50, 49, 45, 0.4);
+    --right-angle: var( --text-color);
+    --background-header-text: #FF8DCB;
+    --section-title: var(--text-color);
+    --link-shadow: var(--title-decor);
+    --header-text: var(--text-color);
+  }
 }

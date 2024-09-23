@@ -1,12 +1,12 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page {
-  background: var(--background-image)
-    var(--background-color);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+  background: var(--background-image) var(--background-color);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
+/* Привет:) Благодарю за поддержку, мне было тяжело делать этот проект */
 /* HEADER  */
 .header {
   padding: 0 20px;
@@ -26,11 +26,6 @@
   .header__theme-menu-list {
     flex-direction: column;
     align-items: flex-end;
-  }
-}
-@media (width < 768px) and (width >= 375px) {
-  .header__theme-menu-list {
-    gap: 11px;
   }
 }
 /* Кнопки */
@@ -80,6 +75,12 @@
   top: 21px;
   right: 49px;
 }
+@media (width < 768px) and (width >= 375px) {
+  .header-rec-icon {
+    top: 11px;
+    right: 39px;
+  }
+}
 /* Точка REC  */
 .header-rec-icon::after {
   content: "";
@@ -93,13 +94,15 @@
   right: -20px;
   transform: translateY(-50%);
 }
-
 /* Углы */
-.decorated-zone::after {
+.decorated-zone::after,
+.decorated-zone::before {
   content: "";
   position: absolute;
   width: 25px;
   height: 25px;
+}
+.decorated-zone::after {
   border-right: 1px solid var(--right-angle);
   border-top: 1px solid var(--right-angle);
   right: 20px;
@@ -112,10 +115,6 @@
   }
 }
 .decorated-zone::before {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
   border-left: 1px solid var(--right-angle);
   border-bottom: 1px solid var(--right-angle);
   left: 20px;
@@ -136,7 +135,7 @@
 }
 @media (width < 1024px) and (width >= 768px) {
   .header__container {
-    padding: 150px 0 183px;
+    padding: 152px 0 183px;
     gap: 133px;
   }
 }
@@ -146,15 +145,18 @@
     gap: 57px;
   }
 }
-.header__title {
-  margin-inline-start: -2%;
+.title {
   font-weight: 700;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   color: var(--tittle-color);
   text-shadow: 4px 4px 0px var(--title-shadow);
 }
+.header__title {
+  margin-inline-start: -2%;
+}
 @media (width < 1024px) and (width >= 375px) {
   .header__title {
+    margin-inline-start: -3%;
     text-shadow: 4px 4px 0px var(--title-decor);
   }
 }
@@ -225,7 +227,6 @@
 .text_indentation {
   line-height: 130%;
 }
-
 .text_indentation:not(:last-child) {
   padding-block-end: 20px;
 }
@@ -259,55 +260,40 @@
 .section__article-title_regular {
   font-weight: 400;
 }
-.section:nth-of-type(2) {
-  grid-template-columns: 1fr 1fr;
+.second_section .section_title {
+  inline-size: 36%;
 }
-
-.section_articles {
+@media (width < 1024px) and (width >= 768px) {
+  .second_section .section_title {
+    inline-size: 20%;
+  }
+}
+@media (width < 768px) and (width >= 375px) {
+  .second_section .section_title {
+    inline-size: 100%;
+  }
+}
+.section_second_articles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row: 2 / 3;
   grid-column: 1 / 3;
   gap: 20px;
 }
-@media (width < 1024px) and (width >= 768px) {
-  .section_articles {
+@media (max-width: 1023px) and (min-width: 768px),
+  (max-width: 767px) and (min-width: 375px) {
+  .section_second_articles {
     display: flex;
     flex-direction: column;
   }
-
-  .section_articles .text_indentation {
+  .section_second_articles .text_indentation {
     padding-block-end: 0px;
-  }
-}
-@media (width < 768px) and (width >= 375px) {
-  .section_articles {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .section_articles .text_indentation {
-    padding-block-end: 0px;
-  }
-}
-.section:nth-of-type(2) .section_title {
-  grid-row: 1 / 2;
-  inline-size: 65%;
-}
-@media (width < 1024px) and (width >= 768px) {
-  .section:nth-of-type(2) .section_title {
-    inline-size: 35%;
-  }
-}
-@media (width < 768px) and (width >= 375px) {
-  .section:nth-of-type(2) .section_title {
-    inline-size: 100%;
   }
 }
 .section:nth-of-type(1) .section_title {
   inline-size: 90%;
 }
-.last_section .section_recommend-title {
+.section_last_articles .section_recommend-title {
   margin-block-end: 20px;
 }
 /* Галерея */
@@ -355,12 +341,6 @@
     margin-top: 40px;
     padding: 262px 10px;
   }
-}
-.footer__title {
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  font-weight: 700;
-  color: var(--tittle-color);
-  text-shadow: 4px 4px 0px var(--title-shadow);
 }
 @media (width < 1024px) and (width >= 375px) {
   .footer__title {
